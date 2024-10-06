@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Metadados essenciais para configuração da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Arquivos CSS externos: variável e estilos principais -->
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="index.css" />
+
+    <!-- Título da página -->
+    <title>LearnZone</title>
+
+    <!-- Biblioteca de ícones Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabeçalho com logo, barra de busca e ícones de navegação -->
+    <header class="header">
+      <div class="logo-container">
+        <!-- Logo da aplicação -->
+        <img
+          class="logo"
+          src="../../src/logonav.svg"
+          alt="Logo da Úbirata Proj"
+        />
+      </div>
+      <div>
+        <!-- Barra de pesquisa -->
+        <input class="input-search" placeholder="Buscar no LearnZone" type="search" />
+      </div>
+      <nav>
+        <!-- Ícones de navegação: pesquisa, notificações e perfil do usuário -->
+        <ul class="nav-wrapper">
+          <li>
+            <a href="#"><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-bell"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Barra lateral (sidebar) com menu de navegação -->
+    <aside class="sidebar">
+      <ul id="sidebar">
+        <!-- Seções principais da barra lateral: Início, Últimos e categorias -->
+        <li><i class="fas fa-home"></i> Início</li>
+        <li><i class="fas fa-star"></i> Últimos</li>
+        <hr />
+        <!-- Separador -->
+        <li class="title">ASSUNTOS</li>
+        <!-- Categorias de conteúdo -->
+        <li><i class="fas fa-atom"></i> Física</li>
+        <li><i class="fas fa-flask"></i> Química</li>
+        <li><i class="fas fa-question-circle"></i> Curiosidades</li>
+        <hr />
+        <!-- Separador -->
+        <li class="title">CONFIGURAÇÕES</li>
+        <!-- Opção de troca de tema -->
+        <li><i class="fas fa-adjust"></i> Troca Tema</li>
+      </ul>
+
+      <!-- Linha lateral decorativa -->
+      <div class="wall" id="wall">
+        <span>||</span>
+      </div>
+    </aside>
+  </body>
+</html>

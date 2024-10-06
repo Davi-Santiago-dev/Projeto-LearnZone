@@ -1,0 +1,148 @@
+/* Global Styles */
+* {
+    /* Remove a margem e define a fonte Arial ou uma fonte sans-serif */
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-background);
+}
+
+ul {
+    /* Remove o estilo padrão da lista */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar */
+.sidebar {
+    /* Ajusta a barra lateral: largura dinâmica, altura, cor de fundo, bordas e sombra */
+    width: auto;
+    height: 60vh;
+    background-color: var(--primary-background);
+    border-radius: 0px 20px 20px 0px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.14);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 2px solid #474747;
+}
+
+.sidebar ul {
+    /* Remove o estilo padrão da lista e garante largura total */
+    width: 100%;
+}
+
+.sidebar li {
+    /* Estilo dos itens de lista: cor, espaçamento, flexbox e cursor */
+    padding: 15px 20px;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar li i {
+    /* Ajusta o espaçamento entre o ícone e o texto */
+    margin-right: 10px;
+}
+
+.sidebar li:hover {
+    /* Efeito ao passar o mouse: cor de fundo, bordas e transição suave */
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, border-radius 0.2s ease;
+    padding-left: 15px;
+}
+
+.title {
+    /* Estilo para títulos de seção */
+    font-size: 15px !important;
+    color: #5F769E !important;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    cursor: default;
+    pointer-events: none;
+}
+
+hr {
+    /* Define a linha divisória entre seções */
+    border: none;
+    border-top: 1px solid #bbb;
+    margin: 1px 0;
+    width: 100%;
+}
+
+/* Header */
+.header {
+    /* Define o layout do cabeçalho: flexbox para alinhar itens e distribuir espaço */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-background);
+    align-items: center;
+    border: 1px solid #474747;
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.14);
+
+}
+
+.logo-container {
+    /* Define o tamanho do contêiner da logo */
+    width: 20%;
+    height: 100%;
+}
+
+.logo {
+    /* Ajusta o tamanho da logo dentro do contêiner */
+    width: 130%;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-wrapper {
+    /* Define o layout da navegação no cabeçalho: distribuição de espaço entre os ícones */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.input-search {
+    /* Estilo do campo de pesquisa: borda, tamanho e espaçamento */
+    padding: 5px;
+    border-radius:20px;
+    width: 30vw;
+    margin-right: 10px;
+    background-color: #2a3236;
+    align-items: center;
+}
+
+/* Wall (decorativo) */
+.wall {
+    /* Define o layout e estilo do elemento decorativo "wall" */
+    width: 20px;
+    background-color: var(--primary-background);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-font);
+}
+
+/* Estilo para usuários adicionados dinamicamente */
+.user {
+    color: white;
+}
+
